@@ -36,7 +36,7 @@ download all of the bundles in the JSON list. We then add the `origin`
 remote and fetch the remaining data from that list.
 
 ```ShellSession
-stolee@stolee-linux-metal:/_git$ rm -rf git-bundle-test trace2.txt && GIT_TRACE2_PERF=/_git/trace2.txt /_git/bundles/clone.sh https://github.com/git/git git-bundle-test
+stolee@stolee-linux-metal:/_git$ GIT_TRACE2_PERF=/_git/trace2.txt /_git/bundles/clone.sh https://github.com/git/git git-bundle-test
 Initialized empty Git repository in /_git/git-bundle-test/.git/
 Downloading https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-10-01.bundle to .git/bundles/0.bundle
 Downloading https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-10-4.bundle to .git/bundles/1.bundle
@@ -65,7 +65,12 @@ Or undo this operation with:
 Turn off this advice by setting config variable advice.detachedHead to false
 
 HEAD is now at af6d1d602a Git 2.33.1
+```
 
+The trace2 logs for this run are available as [`trace2.txt`](trace2.txt), so
+you can see how small the `git fetch origin` portion of `clone.sh` is.
+
+```ShellSession
 stolee@stolee-linux-metal:/_git$ cd git-bundle-test/
 stolee@stolee-linux-metal:/_git/git-bundle-test$ git branch -v
 * (HEAD detached at FETCH_HEAD) af6d1d602a Git 2.33.1
@@ -139,6 +144,36 @@ Downloading https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-10-15.bundle t
 Downloading https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-10-19.bundle to .git/bundles/2.bundle
 Downloading https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-10-26.bundle to .git/bundles/3.bundle
 ```
+
+### Benefits over server-declared URIs
+
+1. The organization of the bundles is completely separate from the origin
+   server. The bundle server can reorganize as needed without communicating
+   with the origin server.
+
+2. The bundle server can be completely independent of the origin. If a
+   company wants to create a local bundle cache, then users can point to
+   it through client-side configuration instead of needing to communicate
+   through the origin server.
+
+3. We can extend the server capabilities to advertise a number of bundle
+   caches, and let the client pick their favorite one. This can present
+   ways to optimize for network latency before committing to a download.
+
+### Things not covered in this proposal
+
+* We don't have a way to authenticate to the bundles. The table of contents
+  and the bundles themselves could be under some form of authentication that
+  is not covered here. We would want to extend the standard to handle auth
+  appropriately, probably through a credential helper.
+
+* We don't consider encrypted bundles. It is likely possible to extend the
+  table of contents with information about each bundle being encrypted with
+  some public key, allowing future clients to understand that option and
+  do the right thing. Extensions like this are obviously possible with the
+  JSON format (as opposed to a custom format that might cause accidental
+  restrictions).
+
 
 ### Custom things to this implementation
 
