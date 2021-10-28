@@ -1,0 +1,504 @@
+11:33:55.995531 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:33:55.995579 common-main.c:49             | d0 | main                     | start        |     |  0.000571 |           |              | git init git-bundle-test
+11:33:55.995649 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | init (init)
+11:33:55.995892 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:33:55.998581 git.c:785                    | d0 | main                     | exit         |     |  0.003580 |           |              | code:0
+11:33:55.998609 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.003608 |           |              | code:0
+11:33:56.405466 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:33:56.405505 common-main.c:49             | d0 | main                     | start        |     |  0.000566 |           |              | git config --get bundle.latestTimestamp
+11:33:56.405633 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:33:56.405910 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | config (config)
+11:33:56.406066 git.c:785                    | d0 | main                     | exit         |     |  0.001130 |           |              | code:1
+11:33:56.406095 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.001164 |           |              | code:1
+11:34:28.546194 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:28.546235 common-main.c:49             | d0 | main                     | start        |     |  0.000618 |           |              | git bundle unbundle .git/bundles/0.bundle
+11:34:28.546339 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:28.546648 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | bundle (bundle)
+11:34:28.547192 run-command.c:738            | d0 | main                     | child_start  |     |  0.001579 |           |              | [ch0] class:? argv:[git index-pack --fix-thin --stdin]
+11:34:28.549322 common-main.c:48             | d1 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:28.549355 common-main.c:49             | d1 | main                     | start        |     |  0.000512 |           |              | /usr/local/libexec/git-core/git index-pack --fix-thin --stdin
+11:34:28.549466 repository.c:132             | d1 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:28.549605 git.c:523                    | d1 | main                     | cmd_name     |     |           |           |              | index-pack (bundle/index-pack)
+11:34:34.371727 git.c:785                    | d1 | main                     | exit         |     |  5.822890 |           |              | code:0
+11:34:34.371746 trace2/tr2_tgt_perf.c:213    | d1 | main                     | atexit       |     |  5.822911 |           |              | code:0
+11:34:34.374211 run-command.c:993            | d0 | main                     | child_exit   |     |  5.828597 |  5.827018 |              | [ch0] pid:7954 code:0
+11:34:34.374296 git.c:785                    | d0 | main                     | exit         |     |  5.828687 |           |              | code:0
+11:34:34.374312 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  5.828703 |           |              | code:0
+11:34:34.378603 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:34.378641 common-main.c:49             | d0 | main                     | start        |     |  0.000548 |           |              | git branch -f refs/bundles/2021-10-01 cefe983a320c03d7843ac78e73bd513a27806845
+11:34:34.378757 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:34.378985 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | branch (branch)
+11:34:34.380245 git.c:785                    | d0 | main                     | exit         |     |  0.002160 |           |              | code:0
+11:34:34.380270 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.002185 |           |              | code:0
+11:34:34.384075 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:34.384110 common-main.c:49             | d0 | main                     | start        |     |  0.000525 |           |              | git config --replace-all bundle.latestTimestamp 1632859613
+11:34:34.384213 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:34.384439 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | config (config)
+11:34:34.384820 git.c:785                    | d0 | main                     | exit         |     |  0.001242 |           |              | code:0
+11:34:34.384846 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.001268 |           |              | code:0
+11:34:34.768635 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:34.768677 common-main.c:49             | d0 | main                     | start        |     |  0.000571 |           |              | git bundle unbundle .git/bundles/1.bundle
+11:34:34.768792 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:34.769126 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | bundle (bundle)
+11:34:34.792548 run-command.c:738            | d0 | main                     | child_start  |     |  0.024444 |           |              | [ch0] class:? argv:[git index-pack --fix-thin --stdin]
+11:34:34.794669 common-main.c:48             | d1 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:34.794703 common-main.c:49             | d1 | main                     | start        |     |  0.000517 |           |              | /usr/local/libexec/git-core/git index-pack --fix-thin --stdin
+11:34:34.794804 repository.c:132             | d1 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:34.794936 git.c:523                    | d1 | main                     | cmd_name     |     |           |           |              | index-pack (bundle/index-pack)
+11:34:34.886590 git.c:785                    | d1 | main                     | exit         |     |  0.092409 |           |              | code:0
+11:34:34.886610 trace2/tr2_tgt_perf.c:213    | d1 | main                     | atexit       |     |  0.092432 |           |              | code:0
+11:34:34.888259 run-command.c:993            | d0 | main                     | child_exit   |     |  0.120156 |  0.095712 |              | [ch0] pid:7979 code:0
+11:34:34.888375 git.c:785                    | d0 | main                     | exit         |     |  0.120277 |           |              | code:0
+11:34:34.888407 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.120309 |           |              | code:0
+11:34:34.893913 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:34.893952 common-main.c:49             | d0 | main                     | start        |     |  0.000589 |           |              | git branch -f refs/bundles/2021-10-4 0785eb769886ae81e346df10e88bc49ffc0ac64e
+11:34:34.894062 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:34.894298 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | branch (branch)
+11:34:34.894867 git.c:785                    | d0 | main                     | exit         |     |  0.001512 |           |              | code:0
+11:34:34.894881 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.001526 |           |              | code:0
+11:34:34.897837 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:34.897861 common-main.c:49             | d0 | main                     | start        |     |  0.000375 |           |              | git config --replace-all bundle.latestTimestamp 1633322983
+11:34:34.897932 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:34.898089 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | config (config)
+11:34:34.898367 git.c:785                    | d0 | main                     | exit         |     |  0.000886 |           |              | code:0
+11:34:34.898385 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.000904 |           |              | code:0
+11:34:35.209581 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:35.209620 common-main.c:49             | d0 | main                     | start        |     |  0.000576 |           |              | git bundle unbundle .git/bundles/2.bundle
+11:34:35.209785 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:35.210144 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | bundle (bundle)
+11:34:35.239260 run-command.c:738            | d0 | main                     | child_start  |     |  0.030218 |           |              | [ch0] class:? argv:[git index-pack --fix-thin --stdin]
+11:34:35.241541 common-main.c:48             | d1 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:35.241575 common-main.c:49             | d1 | main                     | start        |     |  0.000551 |           |              | /usr/local/libexec/git-core/git index-pack --fix-thin --stdin
+11:34:35.241687 repository.c:132             | d1 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:35.241886 git.c:523                    | d1 | main                     | cmd_name     |     |           |           |              | index-pack (bundle/index-pack)
+11:34:35.356821 git.c:785                    | d1 | main                     | exit         |     |  0.115803 |           |              | code:0
+11:34:35.356841 trace2/tr2_tgt_perf.c:213    | d1 | main                     | atexit       |     |  0.115826 |           |              | code:0
+11:34:35.358010 run-command.c:993            | d0 | main                     | child_exit   |     |  0.148968 |  0.118750 |              | [ch0] pid:7999 code:0
+11:34:35.358143 git.c:785                    | d0 | main                     | exit         |     |  0.149107 |           |              | code:0
+11:34:35.358165 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.149129 |           |              | code:0
+11:34:35.363241 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:35.363276 common-main.c:49             | d0 | main                     | start        |     |  0.000527 |           |              | git branch -f refs/bundles/2021-10-7 106298f7f9cca4158a980de149ef217751e1f943
+11:34:35.363379 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:35.363593 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | branch (branch)
+11:34:35.364522 git.c:785                    | d0 | main                     | exit         |     |  0.001780 |           |              | code:0
+11:34:35.364544 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.001803 |           |              | code:0
+11:34:35.368264 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:35.368295 common-main.c:49             | d0 | main                     | start        |     |  0.000483 |           |              | git config --replace-all bundle.latestTimestamp 1633552832
+11:34:35.368392 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:35.368601 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | config (config)
+11:34:35.368956 git.c:785                    | d0 | main                     | exit         |     |  0.001150 |           |              | code:0
+11:34:35.368979 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.001174 |           |              | code:0
+11:34:35.893963 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:35.894006 common-main.c:49             | d0 | main                     | start        |     |  0.000613 |           |              | git bundle unbundle .git/bundles/3.bundle
+11:34:35.894142 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:35.894477 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | bundle (bundle)
+11:34:35.905483 run-command.c:738            | d0 | main                     | child_start  |     |  0.012093 |           |              | [ch0] class:? argv:[git index-pack --fix-thin --stdin]
+11:34:35.907657 common-main.c:48             | d1 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:35.907692 common-main.c:49             | d1 | main                     | start        |     |  0.000549 |           |              | /usr/local/libexec/git-core/git index-pack --fix-thin --stdin
+11:34:35.907799 repository.c:132             | d1 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:35.907943 git.c:523                    | d1 | main                     | cmd_name     |     |           |           |              | index-pack (bundle/index-pack)
+11:34:36.049994 git.c:785                    | d1 | main                     | exit         |     |  0.142856 |           |              | code:0
+11:34:36.050016 trace2/tr2_tgt_perf.c:213    | d1 | main                     | atexit       |     |  0.142880 |           |              | code:0
+11:34:36.051226 run-command.c:993            | d0 | main                     | child_exit   |     |  0.157836 |  0.145743 |              | [ch0] pid:8026 code:0
+11:34:36.051328 git.c:785                    | d0 | main                     | exit         |     |  0.157943 |           |              | code:0
+11:34:36.051349 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.157964 |           |              | code:0
+11:34:36.056125 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:36.056159 common-main.c:49             | d0 | main                     | start        |     |  0.000536 |           |              | git branch -f refs/bundles/2021-10-12 2a97289ad8b103625d3a1a12f66c27f50df822ce
+11:34:36.056269 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:36.056501 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | branch (branch)
+11:34:36.057491 git.c:785                    | d0 | main                     | exit         |     |  0.001875 |           |              | code:0
+11:34:36.057514 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.001899 |           |              | code:0
+11:34:36.061284 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:36.061317 common-main.c:49             | d0 | main                     | start        |     |  0.000508 |           |              | git config --replace-all bundle.latestTimestamp 1633972934
+11:34:36.061426 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:36.061655 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | config (config)
+11:34:36.062069 git.c:785                    | d0 | main                     | exit         |     |  0.001267 |           |              | code:0
+11:34:36.062098 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.001296 |           |              | code:0
+11:34:36.197974 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:36.198017 common-main.c:49             | d0 | main                     | start        |     |  0.000626 |           |              | git bundle unbundle .git/bundles/4.bundle
+11:34:36.198138 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:36.198465 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | bundle (bundle)
+11:34:36.219447 run-command.c:738            | d0 | main                     | child_start  |     |  0.022058 |           |              | [ch0] class:? argv:[git index-pack --fix-thin --stdin]
+11:34:36.221667 common-main.c:48             | d1 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:36.221704 common-main.c:49             | d1 | main                     | start        |     |  0.000547 |           |              | /usr/local/libexec/git-core/git index-pack --fix-thin --stdin
+11:34:36.221873 repository.c:132             | d1 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:36.222033 git.c:523                    | d1 | main                     | cmd_name     |     |           |           |              | index-pack (bundle/index-pack)
+11:34:36.295279 git.c:785                    | d1 | main                     | exit         |     |  0.074129 |           |              | code:0
+11:34:36.295305 trace2/tr2_tgt_perf.c:213    | d1 | main                     | atexit       |     |  0.074156 |           |              | code:0
+11:34:36.296100 run-command.c:993            | d0 | main                     | child_exit   |     |  0.098711 |  0.076653 |              | [ch0] pid:8036 code:0
+11:34:36.296225 git.c:785                    | d0 | main                     | exit         |     |  0.098842 |           |              | code:0
+11:34:36.296246 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.098863 |           |              | code:0
+11:34:36.301146 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:36.301182 common-main.c:49             | d0 | main                     | start        |     |  0.000551 |           |              | git branch -f refs/bundles/2021-10-13 2bd2f258f4195ac54293a3f45b86457c0bd5fc11
+11:34:36.301290 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:36.301519 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | branch (branch)
+11:34:36.302607 git.c:785                    | d0 | main                     | exit         |     |  0.001983 |           |              | code:0
+11:34:36.302633 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.002010 |           |              | code:0
+11:34:36.305096 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:36.305110 common-main.c:49             | d0 | main                     | start        |     |  0.000225 |           |              | git config --replace-all bundle.latestTimestamp 1634072372
+11:34:36.305158 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:36.305255 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | config (config)
+11:34:36.305444 git.c:785                    | d0 | main                     | exit         |     |  0.000562 |           |              | code:0
+11:34:36.305456 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.000574 |           |              | code:0
+11:34:36.473638 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:36.473679 common-main.c:49             | d0 | main                     | start        |     |  0.000560 |           |              | git bundle unbundle .git/bundles/5.bundle
+11:34:36.473833 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:36.474173 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | bundle (bundle)
+11:34:36.489269 run-command.c:738            | d0 | main                     | child_start  |     |  0.016151 |           |              | [ch0] class:? argv:[git index-pack --fix-thin --stdin]
+11:34:36.491063 common-main.c:48             | d1 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:36.491097 common-main.c:49             | d1 | main                     | start        |     |  0.000505 |           |              | /usr/local/libexec/git-core/git index-pack --fix-thin --stdin
+11:34:36.491201 repository.c:132             | d1 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:36.491335 git.c:523                    | d1 | main                     | cmd_name     |     |           |           |              | index-pack (bundle/index-pack)
+11:34:36.653998 git.c:785                    | d1 | main                     | exit         |     |  0.163410 |           |              | code:0
+11:34:36.654031 trace2/tr2_tgt_perf.c:213    | d1 | main                     | atexit       |     |  0.163445 |           |              | code:0
+11:34:36.655735 run-command.c:993            | d0 | main                     | child_exit   |     |  0.182613 |  0.166462 |              | [ch0] pid:8055 code:0
+11:34:36.655843 git.c:785                    | d0 | main                     | exit         |     |  0.182732 |           |              | code:0
+11:34:36.655866 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.182755 |           |              | code:0
+11:34:36.660649 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:36.660685 common-main.c:49             | d0 | main                     | start        |     |  0.000549 |           |              | git branch -f refs/bundles/2021-10-14 9875c515535860450bafd1a177f64f0a478900fa
+11:34:36.660799 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:36.661031 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | branch (branch)
+11:34:36.662143 git.c:785                    | d0 | main                     | exit         |     |  0.002013 |           |              | code:0
+11:34:36.662169 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.002040 |           |              | code:0
+11:34:36.665888 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:36.665925 common-main.c:49             | d0 | main                     | start        |     |  0.000582 |           |              | git config --replace-all bundle.latestTimestamp 1634163358
+11:34:36.666039 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:36.666273 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | config (config)
+11:34:36.666676 git.c:785                    | d0 | main                     | exit         |     |  0.001340 |           |              | code:0
+11:34:36.666702 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.001366 |           |              | code:0
+11:34:36.768474 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:36.768517 common-main.c:49             | d0 | main                     | start        |     |  0.000574 |           |              | git bundle unbundle .git/bundles/6.bundle
+11:34:36.768633 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:36.768968 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | bundle (bundle)
+11:34:36.770617 run-command.c:738            | d0 | main                     | child_start  |     |  0.002679 |           |              | [ch0] class:? argv:[git index-pack --fix-thin --stdin]
+11:34:36.772696 common-main.c:48             | d1 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:36.772729 common-main.c:49             | d1 | main                     | start        |     |  0.000499 |           |              | /usr/local/libexec/git-core/git index-pack --fix-thin --stdin
+11:34:36.772840 repository.c:132             | d1 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:36.773009 git.c:523                    | d1 | main                     | cmd_name     |     |           |           |              | index-pack (bundle/index-pack)
+11:34:36.786803 git.c:785                    | d1 | main                     | exit         |     |  0.014578 |           |              | code:0
+11:34:36.786837 trace2/tr2_tgt_perf.c:213    | d1 | main                     | atexit       |     |  0.014614 |           |              | code:0
+11:34:36.787155 run-command.c:993            | d0 | main                     | child_exit   |     |  0.019215 |  0.016536 |              | [ch0] pid:8065 code:0
+11:34:36.787260 git.c:785                    | d0 | main                     | exit         |     |  0.019325 |           |              | code:0
+11:34:36.787280 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.019345 |           |              | code:0
+11:34:36.791573 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:36.791606 common-main.c:49             | d0 | main                     | start        |     |  0.000494 |           |              | git branch -f refs/bundles/2021-10-15 f443b226ca681d87a3a31e245a70e6bc2769123c
+11:34:36.791713 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:36.791924 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | branch (branch)
+11:34:36.792931 git.c:785                    | d0 | main                     | exit         |     |  0.001826 |           |              | code:0
+11:34:36.792955 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.001849 |           |              | code:0
+11:34:36.796521 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:36.796555 common-main.c:49             | d0 | main                     | start        |     |  0.000490 |           |              | git config --replace-all bundle.latestTimestamp 1634230516
+11:34:36.796659 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:36.796872 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | config (config)
+11:34:36.797231 git.c:785                    | d0 | main                     | exit         |     |  0.001172 |           |              | code:0
+11:34:36.797254 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.001197 |           |              | code:0
+11:34:36.975163 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:36.975203 common-main.c:49             | d0 | main                     | start        |     |  0.000565 |           |              | git bundle unbundle .git/bundles/7.bundle
+11:34:36.975322 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:36.975654 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | bundle (bundle)
+11:34:37.006910 run-command.c:738            | d0 | main                     | child_start  |     |  0.032273 |           |              | [ch0] class:? argv:[git index-pack --fix-thin --stdin]
+11:34:37.009202 common-main.c:48             | d1 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:37.009237 common-main.c:49             | d1 | main                     | start        |     |  0.000539 |           |              | /usr/local/libexec/git-core/git index-pack --fix-thin --stdin
+11:34:37.009372 repository.c:132             | d1 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:37.009516 git.c:523                    | d1 | main                     | cmd_name     |     |           |           |              | index-pack (bundle/index-pack)
+11:34:37.129042 git.c:785                    | d1 | main                     | exit         |     |  0.120349 |           |              | code:0
+11:34:37.129059 trace2/tr2_tgt_perf.c:213    | d1 | main                     | atexit       |     |  0.120368 |           |              | code:0
+11:34:37.129925 run-command.c:993            | d0 | main                     | child_exit   |     |  0.155289 |  0.123016 |              | [ch0] pid:8075 code:0
+11:34:37.130056 git.c:785                    | d0 | main                     | exit         |     |  0.155426 |           |              | code:0
+11:34:37.130075 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.155445 |           |              | code:0
+11:34:37.134922 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:37.134954 common-main.c:49             | d0 | main                     | start        |     |  0.000488 |           |              | git branch -f refs/bundles/2021-10-19 9d530dc0024503ab4218fe6c4395b8a0aa245478
+11:34:37.135058 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:37.135272 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | branch (branch)
+11:34:37.136246 git.c:785                    | d0 | main                     | exit         |     |  0.001787 |           |              | code:0
+11:34:37.136267 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.001809 |           |              | code:0
+11:34:37.139802 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:37.139834 common-main.c:49             | d0 | main                     | start        |     |  0.000483 |           |              | git config --replace-all bundle.latestTimestamp 1634597290
+11:34:37.139936 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:37.140146 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | config (config)
+11:34:37.140505 git.c:785                    | d0 | main                     | exit         |     |  0.001161 |           |              | code:0
+11:34:37.140528 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.001184 |           |              | code:0
+11:34:37.352472 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:37.352513 common-main.c:49             | d0 | main                     | start        |     |  0.000562 |           |              | git bundle unbundle .git/bundles/8.bundle
+11:34:37.352637 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:37.352972 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | bundle (bundle)
+11:34:37.376776 run-command.c:738            | d0 | main                     | child_start  |     |  0.024827 |           |              | [ch0] class:? argv:[git index-pack --fix-thin --stdin]
+11:34:37.379023 common-main.c:48             | d1 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:37.379079 common-main.c:49             | d1 | main                     | start        |     |  0.000547 |           |              | /usr/local/libexec/git-core/git index-pack --fix-thin --stdin
+11:34:37.379193 repository.c:132             | d1 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:37.379338 git.c:523                    | d1 | main                     | cmd_name     |     |           |           |              | index-pack (bundle/index-pack)
+11:34:37.597429 git.c:785                    | d1 | main                     | exit         |     |  0.218902 |           |              | code:0
+11:34:37.597466 trace2/tr2_tgt_perf.c:213    | d1 | main                     | atexit       |     |  0.218941 |           |              | code:0
+11:34:37.598668 run-command.c:993            | d0 | main                     | child_exit   |     |  0.246719 |  0.221892 |              | [ch0] pid:8085 code:0
+11:34:37.598783 git.c:785                    | d0 | main                     | exit         |     |  0.246840 |           |              | code:0
+11:34:37.598804 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.246861 |           |              | code:0
+11:34:37.603438 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:37.603472 common-main.c:49             | d0 | main                     | start        |     |  0.000538 |           |              | git branch -f refs/bundles/2021-10-26 e9e5ba39a78c8f5057262d49e261b42a8660d5b9
+11:34:37.603580 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:37.603811 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | branch (branch)
+11:34:37.604885 git.c:785                    | d0 | main                     | exit         |     |  0.001958 |           |              | code:0
+11:34:37.604908 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.001982 |           |              | code:0
+11:34:37.608429 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:37.608464 common-main.c:49             | d0 | main                     | start        |     |  0.000518 |           |              | git config --replace-all bundle.latestTimestamp 1635203232
+11:34:37.608576 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:37.608808 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | config (config)
+11:34:37.609180 git.c:785                    | d0 | main                     | exit         |     |  0.001242 |           |              | code:0
+11:34:37.609206 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.001268 |           |              | code:0
+11:34:37.629427 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:37.629467 common-main.c:49             | d0 | main                     | start        |     |  0.000555 |           |              | git remote add origin https://github.com/git/git
+11:34:37.629586 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:37.629957 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | remote (remote)
+11:34:37.630753 git.c:785                    | d0 | main                     | exit         |     |  0.001848 |           |              | code:0
+11:34:37.630778 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.001874 |           |              | code:0
+11:34:37.632318 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:37.632335 common-main.c:49             | d0 | main                     | start        |     |  0.000291 |           |              | git fetch origin
+11:34:37.632396 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:37.632583 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | fetch (fetch)
+11:34:37.632646 read-cache.c:2424            | d0 | main                     | region_enter | r1  |  0.000604 |           | index        | label:do_read_index .git/index
+11:34:37.632663 read-cache.c:2429            | d0 | main                     | region_leave | r1  |  0.000623 |  0.000019 | index        | label:do_read_index .git/index
+11:34:37.632784 builtin/fetch.c:1573         | d0 | main                     | region_enter | r1  |  0.000743 |           | fetch        | label:remote_refs
+11:34:37.632812 run-command.c:738            | d0 | main                     | child_start  |     |  0.000770 |           |              | ..[ch0] class:remote-https argv:[git remote-https origin https://github.com/git/git]
+11:34:37.633758 common-main.c:48             | d1 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:37.633773 common-main.c:49             | d1 | main                     | start        |     |  0.000222 |           |              | /usr/local/libexec/git-core/git remote-https origin https://github.com/git/git
+11:34:37.633855 git.c:808                    | d1 | main                     | cmd_name     |     |           |           |              | _run_dashed_ (fetch/_run_dashed_)
+11:34:37.633866 run-command.c:738            | d1 | main                     | child_start  |     |  0.000317 |           |              | [ch0] class:dashed argv:[git-remote-https origin https://github.com/git/git]
+11:34:37.642485 common-main.c:48             | d2 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:37.642521 common-main.c:49             | d2 | main                     | start        |     |  0.000356 |           |              | /usr/local/libexec/git-core/git-remote-https origin https://github.com/git/git
+11:34:37.642619 repository.c:132             | d2 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:37.642656 remote-curl.c:1499           | d2 | main                     | cmd_name     |     |           |           |              | remote-curl (fetch/_run_dashed_/remote-curl)
+11:34:37.904850 builtin/fetch.c:1576         | d0 | main                     | region_leave | r1  |  0.272805 |  0.272062 | fetch        | label:remote_refs
+11:34:37.908463 builtin/fetch.c:1298         | d0 | main                     | region_enter | r1  |  0.276422 |           | fetch        | label:fetch_refs
+11:34:37.909603 fetch-pack.c:685             | d0 | main                     | region_enter |     |  0.277561 |           | fetch-pack   | ..label:parse_remote_refs_and_find_cutoff
+11:34:37.921464 fetch-pack.c:710             | d0 | main                     | region_leave |     |  0.289423 |  0.011862 | fetch-pack   | ..label:parse_remote_refs_and_find_cutoff
+11:34:37.921487 fetch-pack.c:716             | d0 | main                     | region_enter |     |  0.289446 |           | fetch-pack   | ..label:mark_complete_local_refs
+11:34:37.921626 fetch-pack.c:724             | d0 | main                     | region_leave |     |  0.289586 |  0.000140 | fetch-pack   | ..label:mark_complete_local_refs
+11:34:37.921634 fetch-pack.c:730             | d0 | main                     | region_enter |     |  0.289594 |           | fetch-pack   | ..label:mark_common_remote_refs
+11:34:37.923558 fetch-pack.c:739             | d0 | main                     | region_leave |     |  0.291517 |  0.001923 | fetch-pack   | ..label:mark_common_remote_refs
+11:34:37.923849 fetch-pack.c:1604            | d0 | main                     | region_enter | r1  |  0.291809 |           | fetch-pack   | ..label:negotiation_v2
+11:34:38.088249 fetch-pack.c:1638            | d0 | main                     | region_leave | r1  |  0.456198 |  0.164389 | fetch-pack   | ..label:negotiation_v2
+11:34:39.564898 run-command.c:738            | d0 | main                     | child_start  |     |  1.932849 |           |              | ..[ch1] class:? argv:[git index-pack --stdin -v --fix-thin '--keep=fetch-pack 8095 on stolee-linux-metal' --pack_header=2,10222]
+11:34:39.567269 common-main.c:48             | d1 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:39.567307 common-main.c:49             | d1 | main                     | start        |     |  0.000519 |           |              | /usr/local/libexec/git-core/git index-pack --stdin -v --fix-thin '--keep=fetch-pack 8095 on stolee-linux-metal' --pack_header=2,10222
+11:34:39.567424 repository.c:132             | d1 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:39.567571 git.c:523                    | d1 | main                     | cmd_name     |     |           |           |              | index-pack (fetch/index-pack)
+11:34:39.568069 progress.c:268               | d1 | main                     | region_enter | r1  |  0.001289 |           | progress     | label:Receiving objects
+11:34:39.725144 progress.c:329               | d1 | main                     | data         | r1  |  0.158363 |  0.157074 | progress     | ..total_objects:10222
+11:34:39.725160 progress.c:334               | d1 | main                     | data         | r1  |  0.158381 |  0.157092 | progress     | ..total_bytes:7108010
+11:34:39.725165 progress.c:336               | d1 | main                     | region_leave | r1  |  0.158386 |  0.157097 | progress     | label:Receiving objects
+11:34:39.725706 progress.c:268               | d1 | main                     | region_enter | r1  |  0.158927 |           | progress     | label:Resolving deltas
+11:34:39.736416 common-main.c:54             | d2 | main                     | exit         |     |  2.094254 |           |              | code:0
+11:34:39.736488 trace2/tr2_tgt_perf.c:213    | d2 | main                     | atexit       |     |  2.094330 |           |              | code:0
+11:34:39.738242 run-command.c:993            | d1 | main                     | child_exit   |     |  2.104691 |  2.104374 |              | [ch0] pid:8097 code:0
+11:34:39.738271 git.c:833                    | d1 | main                     | exit         |     |  2.104722 |           |              | code:0
+11:34:39.738283 trace2/tr2_tgt_perf.c:213    | d1 | main                     | atexit       |     |  2.104735 |           |              | code:0
+11:34:40.320483 git.c:785                    | d1 | main                     | exit         |     |  0.753702 |           |              | ..code:0
+11:34:40.320501 trace2/tr2_tgt_perf.c:213    | d1 | main                     | atexit       |     |  0.753722 |           |              | code:0
+11:34:40.324016 run-command.c:993            | d0 | main                     | child_exit   |     |  2.691970 |  0.759121 |              | ..[ch1] pid:8100 code:0
+11:34:40.324295 run-command.c:993            | d0 | main                     | child_exit   |     |  2.692253 |  2.691483 |              | ..[ch0] pid:8096 code:0
+11:34:40.324602 builtin/fetch.c:1300         | d0 | main                     | region_leave | r1  |  2.692560 |  2.416138 | fetch        | label:fetch_refs
+11:34:40.324625 builtin/fetch.c:1318         | d0 | main                     | region_enter | r1  |  2.692584 |           | fetch        | label:consume_refs
+11:34:40.329012 run-command.c:738            | d0 | main                     | child_start  |     |  2.696964 |           |              | ..[ch2] class:? argv:[git rev-list --objects --stdin --not --all --quiet --alternate-refs]
+11:34:40.331426 common-main.c:48             | d1 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:40.331461 common-main.c:49             | d1 | main                     | start        |     |  0.000520 |           |              | /usr/local/libexec/git-core/git rev-list --objects --stdin --not --all --quiet --alternate-refs
+11:34:40.331576 repository.c:132             | d1 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:40.331724 git.c:523                    | d1 | main                     | cmd_name     |     |           |           |              | rev-list (fetch/rev-list)
+11:34:40.936093 git.c:785                    | d1 | main                     | exit         |     |  0.605157 |           |              | code:0
+11:34:40.936116 trace2/tr2_tgt_perf.c:213    | d1 | main                     | atexit       |     |  0.605183 |           |              | code:0
+11:34:40.938984 run-command.c:993            | d0 | main                     | child_exit   |     |  3.306938 |  0.609974 |              | ..[ch2] pid:8117 code:0
+11:34:41.037206 builtin/fetch.c:1324         | d0 | main                     | region_leave | r1  |  3.405164 |  0.712580 | fetch        | label:consume_refs
+11:34:41.043952 read-cache.c:2424            | d0 | main                     | region_enter | r1  |  3.411910 |           | index        | label:do_read_index .git/index
+11:34:41.043970 read-cache.c:2429            | d0 | main                     | region_leave | r1  |  3.411930 |  0.000020 | index        | label:do_read_index .git/index
+11:34:41.043980 read-cache.c:2424            | d0 | main                     | region_enter | r1  |  3.411940 |           | index        | label:do_read_index .git/index
+11:34:41.043986 read-cache.c:2429            | d0 | main                     | region_leave | r1  |  3.411946 |  0.000006 | index        | label:do_read_index .git/index
+11:34:41.043998 read-cache.c:2424            | d0 | main                     | region_enter | r1  |  3.411958 |           | index        | label:do_read_index .git/index
+11:34:41.044004 read-cache.c:2429            | d0 | main                     | region_leave | r1  |  3.411964 |  0.000006 | index        | label:do_read_index .git/index
+11:34:41.044037 run-command.c:1951           | d0 | main                     | region_enter |     |  3.411997 |           | submodule    | label:parallel/fetch max:1
+11:34:41.044050 run-command.c:1956           | d0 | main                     | region_leave |     |  3.412010 |  0.000013 | submodule    | label:parallel/fetch
+11:34:41.044320 run-command.c:738            | d0 | main                     | child_start  |     |  3.412278 |           |              | [ch3] class:? argv:[git maintenance run --auto --no-quiet]
+11:34:41.046294 common-main.c:48             | d1 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:41.046324 common-main.c:49             | d1 | main                     | start        |     |  0.000489 |           |              | /usr/local/libexec/git-core/git maintenance run --auto --no-quiet
+11:34:41.046421 repository.c:132             | d1 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:41.046546 git.c:523                    | d1 | main                     | cmd_name     |     |           |           |              | maintenance (fetch/maintenance)
+11:34:41.047762 builtin/gc.c:1320            | d1 | main                     | region_enter | r1  |  0.001933 |           | maintenance  | label:incremental-repack
+11:34:41.047790 run-command.c:738            | d1 | main                     | child_start  |     |  0.001959 |           |              | ..[ch0] class:? argv:[git multi-pack-index write]
+11:34:41.049041 common-main.c:48             | d2 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:41.049059 common-main.c:49             | d2 | main                     | start        |     |  0.000287 |           |              | /usr/local/libexec/git-core/git multi-pack-index write
+11:34:41.049120 repository.c:132             | d2 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:41.049199 git.c:523                    | d2 | main                     | cmd_name     |     |           |           |              | multi-pack-index (fetch/maintenance/multi-pack-index)
+11:34:41.049327 ...tin/multi-pack-index.c:76 | d2 | main                     | cmd_mode     |     |           |           |              | write
+11:34:41.049439 progress.c:268               | d2 | main                     | region_enter | r1  |  0.000670 |           | progress     | label:Adding packfiles to multi-pack-index
+11:34:41.049643 progress.c:329               | d2 | main                     | data         | r1  |  0.000875 |  0.000205 | progress     | ..total_objects:0
+11:34:41.049656 progress.c:336               | d2 | main                     | region_leave | r1  |  0.000887 |  0.000217 | progress     | label:Adding packfiles to multi-pack-index
+11:34:41.084239 chunk-format.c:64            | d2 | main                     | region_enter | r1  |  0.035468 |           | chunkfile    | label:write
+11:34:41.127811 chunk-format.c:94            | d2 | main                     | region_leave | r1  |  0.079038 |  0.043570 | chunkfile    | label:write
+11:34:41.154507 git.c:785                    | d2 | main                     | exit         |     |  0.105737 |           |              | code:0
+11:34:41.154528 trace2/tr2_tgt_perf.c:213    | d2 | main                     | atexit       |     |  0.105760 |           |              | code:0
+11:34:41.154752 run-command.c:993            | d1 | main                     | child_exit   |     |  0.108919 |  0.106960 |              | ..[ch0] pid:8137 code:0
+11:34:41.154801 run-command.c:738            | d1 | main                     | child_start  |     |  0.108968 |           |              | ..[ch1] class:? argv:[git multi-pack-index expire]
+11:34:41.156607 common-main.c:48             | d2 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:41.156638 common-main.c:49             | d2 | main                     | start        |     |  0.000519 |           |              | /usr/local/libexec/git-core/git multi-pack-index expire
+11:34:41.156756 repository.c:132             | d2 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:41.156901 git.c:523                    | d2 | main                     | cmd_name     |     |           |           |              | multi-pack-index (fetch/maintenance/multi-pack-index)
+11:34:41.157135 ...in/multi-pack-index.c:111 | d2 | main                     | cmd_mode     |     |           |           |              | expire
+11:34:41.157194 midx.c:175                   | d2 | main                     | data         | r1  |  0.001082 |  0.001082 | midx         | load/num_packs:10
+11:34:41.157213 midx.c:176                   | d2 | main                     | data         | r1  |  0.001101 |  0.001101 | midx         | load/num_objects:317006
+11:34:41.157384 progress.c:268               | d2 | main                     | region_enter | r1  |  0.001271 |           | progress     | label:Counting referenced objects
+11:34:41.160784 progress.c:329               | d2 | main                     | data         | r1  |  0.004672 |  0.003401 | progress     | ..total_objects:317006
+11:34:41.160803 progress.c:336               | d2 | main                     | region_leave | r1  |  0.004691 |  0.003420 | progress     | label:Counting referenced objects
+11:34:41.160830 progress.c:268               | d2 | main                     | region_enter | r1  |  0.004718 |           | progress     | label:Finding and deleting unreferenced packfiles
+11:34:41.160857 progress.c:329               | d2 | main                     | data         | r1  |  0.004745 |  0.000027 | progress     | ..total_objects:10
+11:34:41.160870 progress.c:336               | d2 | main                     | region_leave | r1  |  0.004758 |  0.000040 | progress     | label:Finding and deleting unreferenced packfiles
+11:34:41.160894 git.c:785                    | d2 | main                     | exit         |     |  0.004781 |           |              | code:0
+11:34:41.160907 trace2/tr2_tgt_perf.c:213    | d2 | main                     | atexit       |     |  0.004795 |           |              | code:0
+11:34:41.161340 run-command.c:993            | d1 | main                     | child_exit   |     |  0.115507 |  0.006539 |              | ..[ch1] pid:8138 code:0
+11:34:41.161425 midx.c:175                   | d1 | main                     | data         | r1  |  0.115596 |  0.113663 | midx         | ..load/num_packs:10
+11:34:41.161442 midx.c:176                   | d1 | main                     | data         | r1  |  0.115614 |  0.113681 | midx         | ..load/num_objects:317006
+11:34:41.161682 run-command.c:738            | d1 | main                     | child_start  |     |  0.115847 |           |              | ..[ch2] class:? argv:[git multi-pack-index repack --batch-size=100176427]
+11:34:41.162754 common-main.c:48             | d2 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:41.162766 common-main.c:49             | d2 | main                     | start        |     |  0.000186 |           |              | /usr/local/libexec/git-core/git multi-pack-index repack --batch-size=100176427
+11:34:41.162808 repository.c:132             | d2 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:41.162859 git.c:523                    | d2 | main                     | cmd_name     |     |           |           |              | multi-pack-index (fetch/maintenance/multi-pack-index)
+11:34:41.162940 ...in/multi-pack-index.c:134 | d2 | main                     | cmd_mode     |     |           |           |              | repack
+11:34:41.162961 midx.c:175                   | d2 | main                     | data         | r1  |  0.000383 |  0.000383 | midx         | load/num_packs:10
+11:34:41.162968 midx.c:176                   | d2 | main                     | data         | r1  |  0.000390 |  0.000390 | midx         | load/num_objects:317006
+11:34:41.163663 run-command.c:738            | d2 | main                     | child_start  |     |  0.001084 |           |              | [ch0] class:? argv:[git pack-objects .git/objects/pack/pack --delta-base-offset --progress]
+11:34:41.165405 common-main.c:48             | d3 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:41.165433 common-main.c:49             | d3 | main                     | start        |     |  0.000430 |           |              | /usr/local/libexec/git-core/git pack-objects .git/objects/pack/pack --delta-base-offset --progress
+11:34:41.165527 repository.c:132             | d3 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:41.165652 git.c:523                    | d3 | main                     | cmd_name     |     |           |           |              | pack-objects (fetch/maintenance/multi-pack-index/pack-objects)
+11:34:41.165939 builtin/pack-objects.c:4171  | d3 | main                     | region_enter | r1  |  0.000942 |           | pack-objects | label:enumerate-objects
+11:34:41.166000 midx.c:175                   | d3 | main                     | data         | r1  |  0.001004 |  0.000062 | midx         | ..load/num_packs:10
+11:34:41.166016 midx.c:176                   | d3 | main                     | data         | r1  |  0.001020 |  0.000078 | midx         | ..load/num_objects:317006
+11:34:41.166390 progress.c:268               | d3 | main                     | region_enter | r1  |  0.001392 |           | progress     | ..label:Enumerating objects
+11:34:41.345918 progress.c:329               | d3 | main                     | data         | r1  |  0.180920 |  0.179528 | progress     | ....total_objects:0
+11:34:41.345943 progress.c:336               | d3 | main                     | region_leave | r1  |  0.180946 |  0.179554 | progress     | ..label:Enumerating objects
+11:34:41.345972 builtin/pack-objects.c:4193  | d3 | main                     | region_leave | r1  |  0.180976 |  0.180034 | pack-objects | label:enumerate-objects
+11:34:41.345978 builtin/pack-objects.c:4199  | d3 | main                     | region_enter | r1  |  0.180982 |           | pack-objects | label:prepare-pack
+11:34:41.345985 progress.c:268               | d3 | main                     | region_enter | r1  |  0.180990 |           | progress     | ..label:Counting objects
+11:34:41.513288 progress.c:329               | d3 | main                     | data         | r1  |  0.348291 |  0.167301 | progress     | ....total_objects:303508
+11:34:41.513320 progress.c:336               | d3 | main                     | region_leave | r1  |  0.348324 |  0.167334 | progress     | ..label:Counting objects
+11:34:41.531179 progress.c:268               | d3 | main                     | region_enter | r1  |  0.366180 |           | progress     | ..label:Compressing objects
+11:34:41.979033 progress.c:329               | d3 | main                     | data         | r1  |  0.814035 |  0.447855 | progress     | ....total_objects:73009
+11:34:41.979072 progress.c:336               | d3 | main                     | region_leave | r1  |  0.814075 |  0.447895 | progress     | ..label:Compressing objects
+11:34:41.979112 builtin/pack-objects.c:4202  | d3 | main                     | region_leave | r1  |  0.814116 |  0.633134 | pack-objects | label:prepare-pack
+11:34:41.979125 builtin/pack-objects.c:4205  | d3 | main                     | region_enter | r1  |  0.814129 |           | pack-objects | label:write-pack-file
+11:34:41.979142 progress.c:268               | d3 | main                     | region_enter | r1  |  0.814145 |           | progress     | ..label:Writing objects
+11:34:43.352324 progress.c:329               | d3 | main                     | data         | r1  |  2.187326 |  1.373181 | progress     | ....total_objects:303508
+11:34:43.352360 progress.c:336               | d3 | main                     | region_leave | r1  |  2.187363 |  1.373218 | progress     | ..label:Writing objects
+11:34:43.352404 builtin/pack-objects.c:1284  | d3 | main                     | data         | r1  |  2.187408 |  1.373279 | pack-objects | ..write_pack_file/wrote:303508
+11:34:43.352411 builtin/pack-objects.c:4208  | d3 | main                     | region_leave | r1  |  2.187415 |  1.373286 | pack-objects | label:write-pack-file
+11:34:43.352422 git.c:785                    | d3 | main                     | exit         |     |  2.187426 |           |              | code:0
+11:34:43.352428 trace2/tr2_tgt_perf.c:213    | d3 | main                     | atexit       |     |  2.187432 |           |              | code:0
+11:34:43.359270 run-command.c:993            | d2 | main                     | child_exit   |     |  2.196684 |  2.195600 |              | [ch0] pid:8140 code:0
+11:34:43.394286 progress.c:268               | d2 | main                     | region_enter | r1  |  2.231705 |           | progress     | label:Adding packfiles to multi-pack-index
+11:34:43.394376 progress.c:329               | d2 | main                     | data         | r1  |  2.231798 |  0.000093 | progress     | ..total_objects:0
+11:34:43.394385 progress.c:336               | d2 | main                     | region_leave | r1  |  2.231807 |  0.000102 | progress     | label:Adding packfiles to multi-pack-index
+11:34:43.447257 chunk-format.c:64            | d2 | main                     | region_enter | r1  |  2.284677 |           | chunkfile    | label:write
+11:34:43.487106 chunk-format.c:94            | d2 | main                     | region_leave | r1  |  2.324525 |  0.039848 | chunkfile    | label:write
+11:34:43.513221 git.c:785                    | d2 | main                     | exit         |     |  2.350641 |           |              | code:0
+11:34:43.513242 trace2/tr2_tgt_perf.c:213    | d2 | main                     | atexit       |     |  2.350664 |           |              | code:0
+11:34:43.513499 run-command.c:993            | d1 | main                     | child_exit   |     |  2.467661 |  2.351814 |              | ..[ch2] pid:8139 code:0
+11:34:43.513550 builtin/gc.c:1325            | d1 | main                     | region_leave | r1  |  2.467721 |  2.465788 | maintenance  | label:incremental-repack
+11:34:43.523299 builtin/gc.c:1320            | d1 | main                     | region_enter | r1  |  2.477469 |           | maintenance  | label:commit-graph
+11:34:43.523465 run-command.c:738            | d1 | main                     | child_start  |     |  2.477633 |           |              | ..[ch3] class:? argv:[git commit-graph write --split --reachable]
+11:34:43.525623 common-main.c:48             | d2 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:43.525655 common-main.c:49             | d2 | main                     | start        |     |  0.000544 |           |              | /usr/local/libexec/git-core/git commit-graph write --split --reachable
+11:34:43.525810 repository.c:132             | d2 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:43.525962 git.c:523                    | d2 | main                     | cmd_name     |     |           |           |              | commit-graph (fetch/maintenance/commit-graph)
+11:34:43.526197 builtin/commit-graph.c:246   | d2 | main                     | cmd_mode     |     |           |           |              | write
+11:34:43.526403 progress.c:268               | d2 | main                     | region_enter | r1  |  0.001298 |           | progress     | label:Collecting referenced commits
+11:34:43.538768 midx.c:175                   | d2 | main                     | data         | r1  |  0.013665 |  0.012367 | midx         | ..load/num_packs:11
+11:34:43.538780 midx.c:176                   | d2 | main                     | data         | r1  |  0.013677 |  0.012379 | midx         | ..load/num_objects:317006
+11:34:43.548452 progress.c:329               | d2 | main                     | data         | r1  |  0.023348 |  0.022050 | progress     | ..total_objects:0
+11:34:43.548475 progress.c:336               | d2 | main                     | region_leave | r1  |  0.023371 |  0.022073 | progress     | label:Collecting referenced commits
+11:34:43.548528 progress.c:268               | d2 | main                     | region_enter | r1  |  0.023424 |           | progress     | label:Loading known commits in commit graph
+11:34:43.548556 progress.c:329               | d2 | main                     | data         | r1  |  0.023453 |  0.000029 | progress     | ..total_objects:818
+11:34:43.548562 progress.c:336               | d2 | main                     | region_leave | r1  |  0.023459 |  0.000035 | progress     | label:Loading known commits in commit graph
+11:34:43.548570 progress.c:268               | d2 | main                     | region_enter | r1  |  0.023467 |           | progress     | label:Expanding reachable commits in commit graph
+11:34:44.080243 progress.c:329               | d2 | main                     | data         | r1  |  0.555138 |  0.531671 | progress     | ..total_objects:0
+11:34:44.080269 progress.c:336               | d2 | main                     | region_leave | r1  |  0.555166 |  0.531699 | progress     | label:Expanding reachable commits in commit graph
+11:34:44.080285 progress.c:268               | d2 | main                     | region_enter | r1  |  0.555182 |           | progress     | label:Clearing commit marks in commit graph
+11:34:44.084693 progress.c:329               | d2 | main                     | data         | r1  |  0.559589 |  0.004407 | progress     | ..total_objects:67441
+11:34:44.084709 progress.c:336               | d2 | main                     | region_leave | r1  |  0.559606 |  0.004424 | progress     | label:Clearing commit marks in commit graph
+11:34:44.084719 progress.c:268               | d2 | main                     | region_enter | r1  |  0.559616 |           | progress     | label:Finding extra edges in commit graph
+11:34:44.107223 progress.c:329               | d2 | main                     | data         | r1  |  0.582118 |  0.022502 | progress     | ..total_objects:67441
+11:34:44.107247 progress.c:336               | d2 | main                     | region_leave | r1  |  0.582144 |  0.022528 | progress     | label:Finding extra edges in commit graph
+11:34:44.107262 progress.c:268               | d2 | main                     | region_enter | r1  |  0.582159 |           | progress     | label:Scanning merged commits
+11:34:44.113133 progress.c:329               | d2 | main                     | data         | r1  |  0.588030 |  0.005871 | progress     | ..total_objects:67441
+11:34:44.113144 progress.c:336               | d2 | main                     | region_leave | r1  |  0.588041 |  0.005882 | progress     | label:Scanning merged commits
+11:34:44.113153 progress.c:268               | d2 | main                     | region_enter | r1  |  0.588050 |           | progress     | label:Computing commit graph topological levels
+11:34:44.121507 progress.c:329               | d2 | main                     | data         | r1  |  0.596403 |  0.008353 | progress     | ..total_objects:67441
+11:34:44.121533 progress.c:336               | d2 | main                     | region_leave | r1  |  0.596429 |  0.008379 | progress     | label:Computing commit graph topological levels
+11:34:44.121546 progress.c:268               | d2 | main                     | region_enter | r1  |  0.596443 |           | progress     | label:Computing commit graph generation numbers
+11:34:44.132018 progress.c:329               | d2 | main                     | data         | r1  |  0.606914 |  0.010471 | progress     | ..total_objects:67441
+11:34:44.132171 progress.c:336               | d2 | main                     | region_leave | r1  |  0.607068 |  0.010625 | progress     | label:Computing commit graph generation numbers
+11:34:44.132281 progress.c:268               | d2 | main                     | region_enter | r1  |  0.607178 |           | progress     | label:Writing out commit graph in 5 passes
+11:34:44.132289 chunk-format.c:64            | d2 | main                     | region_enter | r1  |  0.607186 |           | chunkfile    | ..label:write
+11:34:44.187421 chunk-format.c:94            | d2 | main                     | region_leave | r1  |  0.662313 |  0.055127 | chunkfile    | ..label:write
+11:34:44.187438 progress.c:329               | d2 | main                     | data         | r1  |  0.662335 |  0.055157 | progress     | ..total_objects:337205
+11:34:44.187444 progress.c:336               | d2 | main                     | region_leave | r1  |  0.662341 |  0.055163 | progress     | label:Writing out commit graph in 5 passes
+11:34:44.199812 git.c:785                    | d2 | main                     | exit         |     |  0.674706 |           |              | code:0
+11:34:44.199832 trace2/tr2_tgt_perf.c:213    | d2 | main                     | atexit       |     |  0.674729 |           |              | code:0
+11:34:44.202105 run-command.c:993            | d1 | main                     | child_exit   |     |  3.156269 |  0.678636 |              | ..[ch3] pid:8165 code:0
+11:34:44.202136 builtin/gc.c:1325            | d1 | main                     | region_leave | r1  |  3.156307 |  0.678838 | maintenance  | label:commit-graph
+11:34:44.202190 git.c:785                    | d1 | main                     | exit         |     |  3.156362 |           |              | code:0
+11:34:44.202205 trace2/tr2_tgt_perf.c:213    | d1 | main                     | atexit       |     |  3.156377 |           |              | code:0
+11:34:44.202452 run-command.c:993            | d0 | main                     | child_exit   |     |  6.570408 |  3.158130 |              | [ch3] pid:8136 code:0
+11:34:44.202515 git.c:785                    | d0 | main                     | exit         |     |  6.570475 |           |              | code:0
+11:34:44.202527 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  6.570487 |           |              | code:0
+11:34:44.204711 common-main.c:48             | d0 | main                     | version      |     |           |           |              | 2.33.0.vfs.0.0
+11:34:44.204743 common-main.c:49             | d0 | main                     | start        |     |  0.000531 |           |              | git checkout FETCH_HEAD
+11:34:44.204857 repository.c:132             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:/_git/git-bundle-test
+11:34:44.205213 git.c:523                    | d0 | main                     | cmd_name     |     |           |           |              | checkout (checkout)
+11:34:44.205649 midx.c:175                   | d0 | main                     | data         | r1  |  0.001444 |  0.001444 | midx         | load/num_packs:11
+11:34:44.205674 midx.c:176                   | d0 | main                     | data         | r1  |  0.001469 |  0.001469 | midx         | load/num_objects:317006
+11:34:44.206497 builtin/checkout.c:1084      | d0 | main                     | cmd_mode     |     |           |           |              | branch
+11:34:44.206619 read-cache.c:2424            | d0 | main                     | region_enter | r1  |  0.002408 |           | index        | label:do_read_index .git/index
+11:34:44.206645 read-cache.c:2429            | d0 | main                     | region_leave | r1  |  0.002439 |  0.000031 | index        | label:do_read_index .git/index
+11:34:44.206821 read-cache.c:1619            | d0 | main                     | region_enter |     |  0.002616 |           | index        | label:refresh
+11:34:44.206838 read-cache.c:1701            | d0 | main                     | data         |     |  0.002633 |  0.000017 | index        | ..refresh/sum_lstat:0
+11:34:44.206851 read-cache.c:1702            | d0 | main                     | data         |     |  0.002647 |  0.000031 | index        | ..refresh/sum_scan:0
+11:34:44.206863 read-cache.c:1703            | d0 | main                     | region_leave |     |  0.002659 |  0.000043 | index        | label:refresh
+11:34:44.207279 unpack-trees.c:1740          | d0 | main                     | region_enter |     |  0.003074 |           | unpack_trees | label:unpack_trees
+11:34:44.207297 unpack-trees.c:1744          | d0 | main                     | region_enter | r1  |  0.003093 |           | unpack_trees | ..label:unpack_trees
+11:34:44.207310 unpack-trees.c:1883          | d0 | main                     | region_enter | r1  |  0.003105 |           | unpack_trees | ....label:traverse_trees
+11:34:44.218317 unpack-trees.c:1885          | d0 | main                     | region_leave | r1  |  0.014111 |  0.011006 | unpack_trees | ....label:traverse_trees
+11:34:44.218339 unpack-trees.c:417           | d0 | main                     | region_enter |     |  0.014135 |           | unpack_trees | ....label:check_updates
+11:34:44.218370 progress.c:268               | d0 | main                     | region_enter | r1  |  0.014166 |           | progress     | ......label:Updating files
+11:34:44.501530 progress.c:329               | d0 | main                     | data         | r1  |  0.297324 |  0.283158 | progress     | ........total_objects:3970
+11:34:44.501546 progress.c:336               | d0 | main                     | region_leave | r1  |  0.297341 |  0.283175 | progress     | ......label:Updating files
+11:34:44.501561 progress.c:268               | d0 | main                     | region_enter | r1  |  0.297357 |           | progress     | ......label:Filtering content
+11:34:44.501569 progress.c:329               | d0 | main                     | data         | r1  |  0.297365 |  0.000008 | progress     | ........total_objects:0
+11:34:44.501574 progress.c:336               | d0 | main                     | region_leave | r1  |  0.297370 |  0.000013 | progress     | ......label:Filtering content
+11:34:44.501582 unpack-trees.c:502           | d0 | main                     | data         |     |  0.297378 |  0.283243 | unpack_trees | ......check_updates/nr_write:3970
+11:34:44.501586 unpack-trees.c:505           | d0 | main                     | region_leave |     |  0.297382 |  0.283247 | unpack_trees | ....label:check_updates
+11:34:44.501591 cache-tree.c:275             | d0 | main                     | region_enter |     |  0.297387 |           | cache_tree   | ....label:fully_valid
+11:34:44.501595 cache-tree.c:277             | d0 | main                     | region_leave |     |  0.297391 |  0.000004 | cache_tree   | ....label:fully_valid
+11:34:44.501657 cache-tree.c:535             | d0 | main                     | region_enter | r1  |  0.297452 |           | cache_tree   | ....label:update
+11:34:44.504244 cache-tree.c:538             | d0 | main                     | region_leave | r1  |  0.300039 |  0.002587 | cache_tree   | ....label:update
+11:34:44.504256 unpack-trees.c:1996          | d0 | main                     | region_leave | r1  |  0.300052 |  0.296959 | unpack_trees | ..label:unpack_trees
+11:34:44.504261 unpack-trees.c:1999          | d0 | main                     | data         |     |  0.300057 |  0.296983 | unpack_trees | ..unpack_trees/nr_unpack_entries:4078
+11:34:44.504265 unpack-trees.c:2000          | d0 | main                     | region_leave |     |  0.300061 |  0.296987 | unpack_trees | label:unpack_trees
+11:34:44.504270 cache-tree.c:275             | d0 | main                     | region_enter |     |  0.300066 |           | cache_tree   | label:fully_valid
+11:34:44.504315 cache-tree.c:277             | d0 | main                     | region_leave |     |  0.300111 |  0.000045 | cache_tree   | label:fully_valid
+11:34:44.504322 read-cache.c:3144            | d0 | main                     | region_enter | r1  |  0.300118 |           | index        | label:do_write_index /_git/git-bundle-test/.git/index.lock
+11:34:44.505348 read-cache.c:3025            | d0 | main                     | region_enter |     |  0.301143 |           | index        | ..label:write/extension/cache_tree
+11:34:44.505354 cache-tree.c:588             | d0 | main                     | region_enter | r1  |  0.301150 |           | cache_tree   | ....label:write
+11:34:44.505392 cache-tree.c:590             | d0 | main                     | region_leave | r1  |  0.301188 |  0.000038 | cache_tree   | ....label:write
+11:34:44.505398 read-cache.c:3029            | d0 | main                     | data         |     |  0.301194 |  0.000051 | index        | ....write/extension/cache_tree/bytes:6460
+11:34:44.505402 read-cache.c:3030            | d0 | main                     | region_leave |     |  0.301198 |  0.000055 | index        | ..label:write/extension/cache_tree
+11:34:44.505808 read-cache.c:3106            | d0 | main                     | data         | r1  |  0.301604 |  0.001486 | index        | ..write/version:2
+11:34:44.505816 read-cache.c:3108            | d0 | main                     | data         | r1  |  0.301612 |  0.001494 | index        | ..write/cache_nr:3970
+11:34:44.505820 read-cache.c:3147            | d0 | main                     | region_leave | r1  |  0.301616 |  0.001498 | index        | label:do_write_index /_git/git-bundle-test/.git/index.lock
+11:34:44.505863 unpack-trees.c:1740          | d0 | main                     | region_enter |     |  0.301658 |           | unpack_trees | label:unpack_trees
+11:34:44.505869 unpack-trees.c:1744          | d0 | main                     | region_enter | r1  |  0.301665 |           | unpack_trees | ..label:unpack_trees
+11:34:44.505884 unpack-trees.c:1883          | d0 | main                     | region_enter | r1  |  0.301679 |           | unpack_trees | ....label:traverse_trees
+11:34:44.506186 unpack-trees.c:1885          | d0 | main                     | region_leave | r1  |  0.301982 |  0.000303 | unpack_trees | ....label:traverse_trees
+11:34:44.506205 unpack-trees.c:417           | d0 | main                     | region_enter |     |  0.302001 |           | unpack_trees | ....label:check_updates
+11:34:44.506210 unpack-trees.c:505           | d0 | main                     | region_leave |     |  0.302006 |  0.000005 | unpack_trees | ....label:check_updates
+11:34:44.506215 unpack-trees.c:1996          | d0 | main                     | region_leave | r1  |  0.302011 |  0.000346 | unpack_trees | ..label:unpack_trees
+11:34:44.506219 unpack-trees.c:1999          | d0 | main                     | data         |     |  0.302015 |  0.000357 | unpack_trees | ..unpack_trees/nr_unpack_entries:1
+11:34:44.506222 unpack-trees.c:2000          | d0 | main                     | region_leave |     |  0.302019 |  0.000361 | unpack_trees | label:unpack_trees
+11:34:44.506459 git.c:785                    | d0 | main                     | exit         |     |  0.302254 |           |              | code:0
+11:34:44.506470 tree-walk.c:185              | d0 | main                     | data_json    | r1  |  0.302265 |  0.302265 | traverse_tre | statistics:{"traverse_trees_count":206,"traverse_trees_max_depth":7}
+11:34:44.506476 trace2/tr2_tgt_perf.c:213    | d0 | main                     | atexit       |     |  0.302271 |           |              | code:0
