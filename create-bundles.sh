@@ -27,16 +27,14 @@ do
 	else
 		BRANCH=refs/bundles/2021-10-$day
 		git branch -f $BRANCH $NEXT
-		git bundle create 2021-10-$day.bundle $PREVIOUS..$BRANCH >/dev/null 2>/dev/null
-		PREVIOUS=$BRANCH
-
-		echo "	,"
-		echo "	{"
-		echo "		\"uri\" : \"$URL/2021-10-$day.bundle\","
-		echo "		\"timestamp\" : $(git log --format=%ct -1 $NEXT),"
-		echo "		\"requires\" : \"$URL/$PREVBUNDLE\""
-		echo "	}"
-
+		git bundle create 2021-10-$day.bundle $PREVIOUS..$BRANCH >/dev/null 2>/dev/null &&
+		PREVIOUS=$BRANCH &&
+		echo "	," &&
+		echo "	{" &&
+		echo "		\"uri\" : \"$URL/2021-10-$day.bundle\"," &&
+		echo "		\"timestamp\" : $(git log --format=%ct -1 $NEXT)," &&
+		echo "		\"requires\" : \"$URL/$PREVBUNDLE\"" &&
+		echo "	}" &&
 		PREVBUNDLE=2021-10-$day.bundle
 	fi
 done
