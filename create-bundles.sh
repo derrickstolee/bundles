@@ -9,11 +9,13 @@ git bundle create 2021-10-01.bundle refs/bundles/2021-10-01 >/dev/null 2>/dev/nu
 PREVIOUS=refs/bundles/2021-10-01
 PREVBUNDLE=2021-10-01.bundle
 
+URL="https://nice-ocean-0f3ec7d10.azurestaticapps.net"
+
 echo "["
 echo "	{"
-echo "		\"uri\" : {base}/2021-10-01.bundle,"
-echo "		\"timestamp\" : $(git log --format=%ct -1 $OLDEST),"
-echo "	},"
+echo "		\"uri\" : \"$URL/2021-10-01.bundle\","
+echo "		\"timestamp\" : $(git log --format=%ct -1 $OLDEST)"
+echo "	}"
 
 for day in $(seq 2 29)
 do
@@ -28,11 +30,12 @@ do
 		git bundle create 2021-10-$day.bundle $PREVIOUS..$BRANCH >/dev/null 2>/dev/null
 		PREVIOUS=$BRANCH
 
+		echo "	,"
 		echo "	{"
-		echo "		\"uri\" : \"{base}/2021-10-$day.bundle\","
+		echo "		\"uri\" : \"$URL/2021-10-$day.bundle\","
 		echo "		\"timestamp\" : $(git log --format=%ct -1 $NEXT),"
-		echo "		\"requires\" : \"{base}/$PREVBUNDLE\","
-		echo "	},"
+		echo "		\"requires\" : \"$URL/$PREVBUNDLE\""
+		echo "	}"
 
 		PREVBUNDLE=2021-10-$day.bundle
 	fi

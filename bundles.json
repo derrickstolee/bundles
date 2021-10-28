@@ -1,136 +1,136 @@
 [
 	{
-		"uri" : https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-01.bundle,
-		"timestamp" : 1632859613,
+		"uri" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-01.bundle",
+		"timestamp" : 1632859613
 	},
 	{
 		"uri" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-4.bundle",
 		"timestamp" : 1633322983,
-		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-01.bundle",
+		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-01.bundle"
 	},
 	{
 		"uri" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-5.bundle",
 		"timestamp" : 1633322983,
-		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-4.bundle",
+		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-4.bundle"
 	},
 	{
 		"uri" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-6.bundle",
 		"timestamp" : 1633322983,
-		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-5.bundle",
+		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-5.bundle"
 	},
 	{
 		"uri" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-7.bundle",
 		"timestamp" : 1633552832,
-		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-6.bundle",
+		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-6.bundle"
 	},
 	{
 		"uri" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-8.bundle",
 		"timestamp" : 1633552832,
-		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-7.bundle",
+		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-7.bundle"
 	},
 	{
 		"uri" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-9.bundle",
 		"timestamp" : 1633552832,
-		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-8.bundle",
+		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-8.bundle"
 	},
 	{
 		"uri" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-10.bundle",
 		"timestamp" : 1633552832,
-		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-9.bundle",
+		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-9.bundle"
 	},
 	{
 		"uri" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-11.bundle",
 		"timestamp" : 1633552832,
-		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-10.bundle",
+		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-10.bundle"
 	},
 	{
 		"uri" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-12.bundle",
 		"timestamp" : 1633972934,
-		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-11.bundle",
+		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-11.bundle"
 	},
 	{
 		"uri" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-13.bundle",
 		"timestamp" : 1634072372,
-		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-12.bundle",
+		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-12.bundle"
 	},
 	{
 		"uri" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-14.bundle",
 		"timestamp" : 1634163358,
-		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-13.bundle",
+		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-13.bundle"
 	},
 	{
 		"uri" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-15.bundle",
 		"timestamp" : 1634230516,
-		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-14.bundle",
+		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-14.bundle"
 	},
 	{
 		"uri" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-16.bundle",
 		"timestamp" : 1634230516,
-		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-15.bundle",
+		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-15.bundle"
 	},
 	{
 		"uri" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-17.bundle",
 		"timestamp" : 1634230516,
-		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-16.bundle",
+		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-16.bundle"
 	},
 	{
 		"uri" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-18.bundle",
 		"timestamp" : 1634230516,
-		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-17.bundle",
+		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-17.bundle"
 	},
 	{
 		"uri" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-19.bundle",
 		"timestamp" : 1634597290,
-		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-18.bundle",
+		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-18.bundle"
 	},
 	{
 		"uri" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-20.bundle",
 		"timestamp" : 1634597290,
-		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-19.bundle",
+		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-19.bundle"
 	},
 	{
 		"uri" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-21.bundle",
 		"timestamp" : 1634597290,
-		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-20.bundle",
+		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-20.bundle"
 	},
 	{
 		"uri" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-22.bundle",
 		"timestamp" : 1634597290,
-		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-21.bundle",
+		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-21.bundle"
 	},
 	{
 		"uri" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-23.bundle",
 		"timestamp" : 1634597290,
-		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-22.bundle",
+		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-22.bundle"
 	},
 	{
 		"uri" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-24.bundle",
 		"timestamp" : 1634597290,
-		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-23.bundle",
+		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-23.bundle"
 	},
 	{
 		"uri" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-25.bundle",
 		"timestamp" : 1634597290,
-		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-24.bundle",
+		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-24.bundle"
 	},
 	{
 		"uri" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-26.bundle",
 		"timestamp" : 1635203232,
-		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-25.bundle",
+		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-25.bundle"
 	},
 	{
 		"uri" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-27.bundle",
 		"timestamp" : 1635203232,
-		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-26.bundle",
+		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-26.bundle"
 	},
 	{
 		"uri" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-28.bundle",
 		"timestamp" : 1635203232,
-		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-27.bundle",
+		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-27.bundle"
 	},
 	{
 		"uri" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-29.bundle",
 		"timestamp" : 1635203232,
-		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-28.bundle",
-	},
+		"requires" : "https://nice-ocean-0f3ec7d10.azurestaticapps.net//2021-10-28.bundle"
+	}
 ]
