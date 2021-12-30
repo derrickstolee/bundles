@@ -1,33 +1,51 @@
-[bundle "day2021-10-01"]
-		uri = https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-10-01.bundle
-		timestamp = 1632859613
+[bundle "tableOfContents"]
+        version = 1
 
-[bundle "day2021-10-4"]
-    uri = https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-10-4.bundle
-		timestamp = 1633322983
-		requires = day2021-10-01
+[bundle "2021-12-11.bundle"]
+        uri = "https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-12-11.bundle"
+        timestamp = 1639175716
+        requires = "2021-12-01.bundle"
 
-[bundle "day2021-10-7"]
-		uri = https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-10-7.bundle
-		timestamp = 1633552832
-		requires = day2021-10-4
+[bundle "2021-12-15.bundle"]
+        uri = "https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-12-15.bundle"
+        timestamp = 1639590011
+        requires = "2021-12-11.bundle"
 
-[bundle "day2021-10-12"]
-		uri = https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-10-12.bundle
-		timestamp = 1633972934
-		requires = day2021-10-7
+[bundle "2021-12-22.bundle"]
+        uri = "https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-12-22.bundle"
+        timestamp = 1640127803
+        requires = "2021-12-15.bundle"
 
-[bundle "day2021-10-13"]
-		uri = https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-10-13.bundle
-		timestamp = 1634072372
-		requires = day2021-10-12
+[bundle "2021-12-23.bundle"]
+        uri = "https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-12-23.bundle"
+        timestamp = 1640242091
+        requires = "2021-12-22.bundle"
 
-[bundle "day2021-10-14"]
-    uri = https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-10-14.bundle
-		timestamp = 1634163358
-		requires = day2021-10-13
-    
-[bundle "day2021-10-15"]
-		uri = https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-10-15.bundle
-		timestamp = 1634230516
-		requires = day2021-10-14
+[bundle "2021-12-01.blobless.bundle"]
+        uri = "https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-12-01.blobless.bundle"
+        timestamp = 1638229311
+        filter = blob:none
+
+[bundle "2021-12-11.blobless.bundle"]
+        uri = "https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-12-11.blobless.bundle"
+        timestamp = 1639175716
+        requires = "2021-12-01.blobless.bundle"
+        filter = blob:none
+
+[bundle "2021-12-15.blobless.bundle"]
+        uri = "https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-12-15.blobless.bundle"
+        timestamp = 1639590011
+        requires = "2021-12-11.blobless.bundle"
+        filter = blob:none
+
+[bundle "2021-12-22.blobless.bundle"]
+        uri = "https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-12-22.blobless.bundle"
+        timestamp = 1640127803
+        requires = "2021-12-15.blobless.bundle"
+        filter = blob:none
+
+[bundle "2021-12-23.blobless.bundle"]
+        uri = "https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-12-23.blobless.bundle"
+        timestamp = 1640242091
+        requires = "2021-12-22.blobless.bundle"
+        filter = blob:none
