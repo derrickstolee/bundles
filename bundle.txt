@@ -1,4 +1,4 @@
-[bundle "tableOfContents"]
+[bundle "tableofcontents"]
 	version = 1
 
 [bundle "2021-12-11.bundle"]
