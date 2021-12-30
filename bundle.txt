@@ -1,51 +1,51 @@
 [bundle "tableofcontents"]
 	version = 1
 
-[bundle "2021-12-11.bundle"]
+[bundle "2021-12-11-bundle"]
 	uri = "https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-12-11.bundle"
 	timestamp = 1639175716
-	requires = "2021-12-01.bundle"
+	requires = "2021-12-01-bundle"
 
-[bundle "2021-12-15.bundle"]
+[bundle "2021-12-15-bundle"]
 	uri = "https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-12-15.bundle"
 	timestamp = 1639590011
-	requires = "2021-12-11.bundle"
+	requires = "2021-12-11-bundle"
 
-[bundle "2021-12-22.bundle"]
+[bundle "2021-12-22-bundle"]
 	uri = "https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-12-22.bundle"
 	timestamp = 1640127803
-	requires = "2021-12-15.bundle"
+	requires = "2021-12-15-bundle"
 
-[bundle "2021-12-23.bundle"]
+[bundle "2021-12-23-bundle"]
 	uri = "https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-12-23.bundle"
 	timestamp = 1640242091
-	requires = "2021-12-22.bundle"
+	requires = "2021-12-22-bundle"
 
-[bundle "2021-12-01.blobless.bundle"]
+[bundle "2021-12-01-blobless-bundle"]
 	uri = "https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-12-01.blobless.bundle"
 	timestamp = 1638229311
 	filter = blob:none
 
-[bundle "2021-12-11.blobless.bundle"]
+[bundle "2021-12-11-blobless-bundle"]
 	uri = "https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-12-11.blobless.bundle"
 	timestamp = 1639175716
-	requires = "2021-12-01.blobless.bundle"
+	requires = "2021-12-01-blobless-bundle"
 	filter = blob:none
 
-[bundle "2021-12-15.blobless.bundle"]
+[bundle "2021-12-15-blobless-bundle"]
 	uri = "https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-12-15.blobless.bundle"
 	timestamp = 1639590011
-	requires = "2021-12-11.blobless.bundle"
+	requires = "2021-12-11-blobless-bundle"
 	filter = blob:none
 
-[bundle "2021-12-22.blobless.bundle"]
+[bundle "2021-12-22-blobless-bundle"]
 	uri = "https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-12-22.blobless.bundle"
 	timestamp = 1640127803
-	requires = "2021-12-15.blobless.bundle"
+	requires = "2021-12-15-blobless-bundle"
 	filter = blob:none
 
-[bundle "2021-12-23.blobless.bundle"]
+[bundle "2021-12-23-blobless-bundle"]
 	uri = "https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-12-23.blobless.bundle"
 	timestamp = 1640242091
-	requires = "2021-12-22.blobless.bundle"
+	requires = "2021-12-22-blobless-bundle"
 	filter = blob:none
