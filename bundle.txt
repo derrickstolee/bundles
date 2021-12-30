@@ -29,5 +29,5 @@
     
 [bundle "day2021-10-15"]
 		uri = https://nice-ocean-0f3ec7d10.azurestaticapps.net/2021-10-15.bundle
-		timestamp = 1634230516,
+		timestamp = 1634230516
 		requires = day2021-10-14
